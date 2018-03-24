@@ -2,16 +2,14 @@ html {
     position: relative;
     min-height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    /*That slight UI shift really bugs me */
+    overflow-y: scroll; /*That slight UI shift really bugs me */
 }
 
 body {
     background-color: #1a1a1a;
     color: #fff;
     font-family: Helvetica, sans-serif;
-    margin-bottom: 105px;
-    /*Height of the footer*/
+    margin-bottom: 105px; /*Height of the footer*/
 }
 
 html,
@@ -296,8 +294,17 @@ a:hover {
 }
 
 /* Media Queries*/
+@media (max-width: 574px) {
+    #sitenav {
+        margin-left: 0px;
+    }
+}
 
 @media (max-width: 767px) {
+    #name {
+        font-size: 50px; /*fall back*/
+        font-size: 10vw;
+    }
     #footer {
         display: none;
     }

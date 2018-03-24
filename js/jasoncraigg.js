@@ -44,3 +44,8 @@ $(function () {
         changedHash && $('ul.nav a[href="' + changedHash + '"]').tab('show');
     }, false);
 });
+
+$(window).resize(function() {
+    if ($(window).width() <= 574) $('#sitenav').addClass("nav-justified");
+    else $('#sitenav').removeClass("nav-justified");
+});
