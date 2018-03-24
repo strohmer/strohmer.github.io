@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Jason Craigg" name="author">
+    <meta contant="Jason Craigg, Software Engineer, Software, Programmer, Software Developer, Developer, IT, nyc, new york city" name="keywords">
+    <meta content="Jason Craigg is a developer based in NYC. And a pretty cool guy." name="description">
+    <title>Jason Craigg</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/jasoncraigg.css" rel="stylesheet">
+
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/jasoncraigg.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="intro" class="nowrap">
+            Hi, I'm
+            <br><strong id="name">Jason Craigg</strong>
+        </div>
+
+        <!-- Tabs -->
+        <nav>
+            <ul class="nav nav-tabs" id="sitenav" role="tablist">
+                <li class="nav-item">
+                    <a href="#about" role="tab" class="nav-link active" id="about-tab" data-toggle="tab">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" role="tab" class="nav-link" id="projects-tab" data-toggle="tab">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" role="tab" class="nav-link" id="experience-tab" data-toggle="tab">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" role="tab" class="nav-link" id="blog-tab" data-toggle="tab">Blog / Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Landing -->
+            <div class="tab-pane fade show active nowrap" id="about" role="tabpanel">
+                <div id="landing-intro">
+                    <br>
+                    <p>New York City-based programming hobbyist and recent grad.</p>
+                    <p>Strong interest in game, mobile, desktop, web and AI development.</p>
+                    <p>I enjoy <a href="http://www.github.com/strohmer">writing code</a> and creating cool things.</p>
+                    <p>I sometimes like to <a href="#blog" id="blog-link">write</a> about other things that aren't code.</p>
+                    <p>Feel free to have a look around.</p>
+                    <p>Or if you prefer, I have a sweet <a href="#about">résumé</a> you can check out.</p>
+                    <p>Or even shoot me an <a href="#about">e-mail</a>.</p>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="tab-pane fade" id="projects" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 projects-container" jump-target="personalwebsite">
+                        <h5>Personal Website</h5>
+                        <b><img src="images/websitepreview.png" alt="Jason's Website"></b>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 projects-container" jump-target="steammontage">
+                        <h5>Steam Montage</h5>
+                        <b><img src="images/smontagepreview.png" alt="Steam Montage"></b>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 projects-container" jump-target="reactcalendar">
+                        <h5>React Calendar</h5>
+                        <b><img src="images/rcalendarpreview.png" alt="React Calendar"></b>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 projects-container" jump-target="lunchbot">
+                        <h5>LunchBot</h5>
+                        <b><img src="images/lunchbotpreview.png" alt="LunchBot"></b>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 projects-container" jump-target="housechef">
+                        <h5>House-Chef</h5>
+                        <b><img src="images/housechefpreview.png" alt="House Chef"></b>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 projects-container" jump-target="pong">
+                        <h5>Pong</h5>
+                        <b><img src="images/pongpreview.png" alt="Pong"></b>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-pane fade" id="experience" role="tabpanel">
+                <ul class="tl">
+                    <div id="flag"><i class="fas fa-code"></i></div>
+                    <li class="tl" id="personalwebsite">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>Jason's Website</h6>
+                                <span class="tl-time">March 2018</span>
+                                <p><small class="text-muted">Website</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <p>This! This website! The one you're looking at right now!
+                                    <br>Bootstrap 4, jQuery and good ol' HTML/CSS/JS.
+                                    <br>This project is open-source and available on <a href="https://github.com/strohmer/strohmer.github.io">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl" id="reactcalendar">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>React Calendar</h6>
+                                <span class="tl-time">October 2017</span>
+                                <p><small class="text-muted">Web Application</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <div id="calendarcarousel" class="carousel slide" data-ride="carousel" data-keyboard="false" data-interval="7000">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#calendarcarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#calendarcarousel" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="images/rcalendarpreview.png" alt="React Calendar Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="images/rcalendarcarousel2.png" alt="React Calendar Screenshot 2">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#calendarcarousel" role="button" data-slide="prev">
+                                        <i class=" fa fa-chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#calendarcarousel" role="button" data-slide="next">
+                                        <i class=" fa fa-chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <br>
+                                <p>A calendar made with React ES6 made as a learning project for react.
+                                    <br>Not very pretty, but functional. Uses React/Express/Node/MongoDB stack and accepts/displays user-inserted events that are stored into the database through the back-end.
+                                    <br>This project is open-source and available on <a href="https://github.com/strohmer/React-Calendar">GitHub</a>.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl" id="steammontage">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>Steam Montage</h6>
+                                <span class="tl-time">September 2017</span>
+                                <p><small class="text-muted">Desktop Application</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <div id="smontagecarousel" class="carousel slide" data-ride="carousel" data-keyboard="false" data-interval="7000">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#smontagecarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#smontagecarousel" data-slide-to="1"></li>
+                                        <li data-target="#smontagecarousel" data-slide-to="2"></li>
+                                        <li data-target="#smontagecarousel" data-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="images/smontagecarousel1.png" alt="Steam Montage Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="images/smontagecarousel2.png" alt="Steam Montage Screenshot 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="images/smontagecarousel3.png" alt="Steam Montage Screenshot 3">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="images/smontagecarousel4.png" alt="Steam Montage Screenshot 4">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#smontagecarousel" role="button" data-slide="prev">
+                                        <i class=" fa fa-chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#smontagecarousel" role="button" data-slide="next">
+                                        <i class=" fa fa-chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <br>
+                                <p>A Java desktop tool that generates a grid of someone's owned games on the popular PC game distribution service Steam. Simply plug in the profile ID, desired width of the grid and go.
+                                    <br>This project is open-source and available on <a href="https://github.com/strohmer/Steam-Montage">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl" id="lunchbot">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>LunchBot</h6>
+                                <span class="tl-time">July 2017</span>
+                                <p><small class="text-muted">Desktop Application</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <div id="lunchbotcarousel" class="carousel slide" data-ride="carousel" data-keyboard="false" data-interval="7000">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#lunchbotcarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#lunchbotcarousel" data-slide-to="1"></li>
+                                        <li data-target="#lunchbotcarousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="images/lunchbotpreview.png" alt="Lunchbot Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="images/lunchbotcarousel2.png" alt="Lunchbot Screenshot 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="images/lunchbotcarousel3.png" alt="Lunchbot Screenshot 3">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#lunchbotcarousel" role="button" data-slide="prev">
+                                        <i class=" fa fa-chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#lunchbotcarousel" role="button" data-slide="next">
+                                        <i class=" fa fa-chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <br>
+                                <p>A .NET-powered, self-hosted chatroom bot written in C# for the popular broadcasting website Twitch (IRC). Bot was meant to ease the burden of chatroom moderation for the broadcaster while they streamed. Offers auto-moderation through host-defined vulgarity filters, spam control, etc. Also responds to user !commands and offers other luxury features such as loyalty points tracking, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>CUNY Tech Prep - New York City Tech Talent Pipeline</h6>
+                                <span class="tl-time">June 2016 - August 2017</span>
+                                <p><small class="text-muted">Program</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/nycttp.png" alt="NYC Tech Talent Pipeline">
+                                <p>Selected for a competitive year-long training program that blends a full stack JavaScript bootcamp with professional development coaching.
+                                    <br>More information about the program can be found <a href="https://cunytechprep.nyc/">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl" id="housechef">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>House Chef</h6>
+                                <span class="tl-time">September 2016 - December 2016</span>
+                                <p><small class="text-muted">Web Application</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/chef.png" alt="Chef">
+                                <br>
+                                <p>Worked with <a href="https://github.com/strohmer/CTP-ChefApp/graphs/contributors">two other developers</a> to design and build a full-stack "Chef-on-demand" web application which utilized the Google Maps API to allow users to hire local chefs to cook at their homes.
+                                    <br>This project is open-source and available on <a href="https://github.com/strohmer/CTP-ChefApp">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>B-Codes - Google Ignite</h6>
+                                <span class="tl-time">September 2016 - May 2017</span>
+                                <p><small class="text-muted">Tutor</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/googleignitelogo.png" alt="Google Ignite">
+                                <p>Instructed Jr. high and high school students in programming, mobile app creation, robotics, raspberry pi and 3D printing to help spark a passion in Computer Science.
+                                    <br> Part of the <a href="https://ignitecs.withgoogle.com/">Google IgniteCS</a> program.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>Computer Science Peer Tutor at CUNY</h6>
+                                <span class="tl-time">August 2016 - May 2017</span>
+                                <p><small class="text-muted">Tutor</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/cunylogo.png" alt="CUNY">
+                                <p>Selected to tutor other CUNY students in HTML, CSS, C++ and Physics. As a tutor, I helped other students debug their programs and ultimately complete their projects and assignments.
+                                    <br>The opportunity also allowed me to not only strengthen what I know, but also learn many more computer science fundamentals.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>NASA CubeSat Launch Initiative</h6>
+                                <span class="tl-time">June 2016 - January 2017</span>
+                                <p><small class="text-muted">Research</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/nasalogo.png" alt="NASA">
+                                <p>Worked on a cross-functional team of 4 to design, document and build a functional Raspberry Pi-based CubeSat (Pi-Sat).
+                                    <br>Assembled, simplified and soldered circuitry of 5 Pi boards in a master/slave model, and wrote code in Python to process the data returned from several sensors - one from each board - while meeting program memory and weight constraints.
+                                    <br>Also designed and built a testing environment (Javascript, AJAX, PHP) which granted us the ability to request and display data from the CubeSat over LAN.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>Google Applied CS with Android</h6>
+                                <span class="tl-time">June 2016 - July 2017</span>
+                                <p><small class="text-muted">Program</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/googleappliedcs.png" alt="Google Applied CS">
+                                <p>I was one of 15 selected to participate in an 8-week live development boot-camp course facilitated by Google engineers.
+                                    <br>In the span of 8 weeks, I created several games that required knowledge and use of Data Structures, Algorithms and Artificial Intelligence in Java using Android Studio.
+                                    <br>Awarded a certificate of completion at the end of the course.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl" id="pong">
+                        <div class="tl-circ"></div>
+                        <div class="tl-panel">
+                            <div class="tl-heading">
+                                <h6>Pong</h6>
+                                <span class="tl-time">March 2014</span>
+                                <p><small class="text-muted">Game</small></p>
+                            </div>
+                            <div class="tl-body">
+                                <img src="images/pongpreview.png" alt="Pong">
+                                <p>A simple (and admittedly incomplete) clone of Pong I created as a refresher in Javascript programming.
+                                    <br>This project is open-source and available on <a href="https://github.com/strohmer/Pong">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Blog/Contact -->
+            <div class="tab-pane fade" id="blog" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-1 order-md-2 contact-info">
+                        <a href="http://www.github.com/strohmer"><i class="fab fa-github-square fa-fw"></i></a>
+                        <a href="https://www.linkedin.com/in/craiggjason/"><i class="fab fa-linkedin fa-fw"></i></a>
+                        <a href="#"><i class="fas fa-envelope-square fa-fw"></i></a>
+                    </div>
+                    <div class="col-md-9">
+                        <div>
+                            <b>Website Complete!</b>
+                            <br><small class="text-muted">March 23, 2018</small>
+                            <br>
+                            <div>How great it is to have a "home" for projects to come.</div>
+                            <hr>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        
+    </div>
+</body>
+</html>
