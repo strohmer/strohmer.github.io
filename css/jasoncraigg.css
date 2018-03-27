@@ -79,10 +79,6 @@ a:hover {
     margin: 0 auto 0 auto;
 }
 
-.nowrap {
-    white-space: nowrap;
-}
-
 .projects-container {
     height: 200px;
     padding: 0 40px;
@@ -138,7 +134,7 @@ a:hover {
 }
 
 #sitenav li a {
-    color: #353535;
+    color: #6b6b6b;
     border-color: transparent;
 }
 
@@ -186,6 +182,7 @@ a:hover {
 }
 
 /* Timeline Stuff */
+
 .tl {
     list-style: none;
     padding: 15px 0 15px;
@@ -202,7 +199,7 @@ a:hover {
     position: absolute;
     content: " ";
     width: 4px;
-    background: linear-gradient(#febd00,transparent);
+    background: #febd00;
     left: 50%;
     margin-left: -.5px;
 }
@@ -242,7 +239,7 @@ a:hover {
 .tl li .tl-circ {
     position: absolute;
     left: 50%;
-    background: #febd00 ;
+    background: #febd00;
     width: 20px;
     height: 20px;
     margin-left: -9px;
@@ -286,7 +283,7 @@ a:hover {
     height: 76px;
     left: 50.3%;
     position: relative;
-    background: #febd00 ;
+    background: #febd00;
     margin-bottom: 20px;
     font-size: 50px;
     text-align: center;
@@ -294,6 +291,7 @@ a:hover {
 }
 
 /* Media Queries*/
+
 @media (max-width: 574px) {
     #sitenav {
         margin-left: 0px;
@@ -310,6 +308,9 @@ a:hover {
     }
     #contact-information {
         order: 1;
+    }
+    .tl:before {
+        background: linear-gradient(#febd00, transparent);
     }
 }
 
