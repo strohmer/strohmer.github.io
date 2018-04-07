@@ -16,7 +16,11 @@ function clickTab(tab) {
 
 $('#landing-intro #blog-link').click(function(e) {
     clickTab('#blog');
-})
+});
+
+$('.mail-me').click(function() {
+    window.open('mailto:jason@jasoncraigg.com');
+  });
 
 $('#projects .projects-container').click(function (e) {
     var jump = $(this).attr("jump-target");

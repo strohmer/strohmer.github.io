@@ -32,6 +32,12 @@ a:hover {
     color: #a47a00;
 }
 
+hr {
+    border: 0;
+    border-bottom: 1px dashed #6b6b6b;
+    height: 1px;
+}
+
 .carousel {
     margin: .5rem;
 }
@@ -86,7 +92,7 @@ a:hover {
 
 .projects-container > h5 {
     text-align: center;
-    color: #353535;
+    color: #6b6b6b;
 }
 
 .projects-container:hover {
@@ -107,7 +113,7 @@ a:hover {
     padding: 10px;
     margin: 0 auto;
     display: block;
-    opacity: 0.3;
+    opacity: 0.7;
 }
 
 .contact-info {
